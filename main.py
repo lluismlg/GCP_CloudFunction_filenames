@@ -7,6 +7,6 @@ def check_files(request):
    initial_dir = ' / '.join(initial_dir)
    second_dir = ' / '.join(second_dir)
    
-   result = ' /n '.join(second_dir)
+   result = initial_dir+' /n '+second_dir
    
    return result
