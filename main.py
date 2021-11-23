@@ -1,6 +1,6 @@
 import os
 
-def checkFiles(request):
+def check_files(request):
    initial_dir = os.listdir("./")
    second_dir = os.listdir("./files/sites/default/files/special_topics/cn/")
    
