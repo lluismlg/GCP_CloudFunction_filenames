@@ -1,10 +1,7 @@
-import os
+from flask import Flask
 
-def check_files(request):
-   initial_dir = os.listdir("./")
-   second_dir = os.listdir("./files/sites/default/files/special_topics/cn/")
-   
-   initial_dir = ' / '.join(initial_dir)
-   second_dir = ' / '.join(second_dir)
-   
-   return f'{initial_dir} - {second_dir}'
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
